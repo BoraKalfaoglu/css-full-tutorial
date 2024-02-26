@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+<body>
+    <div class="kapyayici" style="
+        display: grid; 
+        grid-template-columns: 100px 100px 100px 100px;
+        ">
+        <!-- aşşağıda 3 tane div açıp yukarıya 3 tane px değeri verirsen hepsi yan yana olur ancak tek bi tane px değeri verirsen hepsi alt alta olur-->
+        <div style="background: red;">kutu1</div>
+        <div style="background: yellow;">kutu2</div>
+        <div style="background: turquoise;">kutu3</div>
+        <div style="background: tomato;">kutu4</div>
+    </div>
+
+    <div class="kapyayici" style="
+    margin-top: 50px;
+    display: grid; 
+    grid-template-columns: 100px 2fr 1fr;
+    ">
+
+        <div style="background: red;">kutu1</div>
+        <div style="background: yellow;">kutu2</div>
+        <div style="background: turquoise;">kutu3</div>
+    </div>
+
+
+    <div class="kapyayici" style="
+    margin-top: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    ">
+        <!-- column-gap kutucukların arasını açar eğer üstündeki kutuyla arasını açmak istiyorsan row-gap yazmak gerek eğer gap yazıp bir değer girersek hem yanlardan hemde üstten boşluk bıurakır-->
+
+
+        <!-- fr = kalan mesafenin hepsinin kaplamasına yarayan bir komut-->
+        <div style="background: red; height: 200px;">kutu1</div>
+        <div style="background: yellow;height: 200px;">kutu2</div>
+        <div style="background: turquoise;height: 200px;">kutu3</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
